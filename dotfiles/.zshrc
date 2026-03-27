@@ -65,7 +65,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # -------------------------------
 # Zsh options
 # -------------------------------
-setopt auto_cd             # cambia directory senza 'cd'
+#setopt auto_cd             # cambia directory senza 'cd'
 setopt correct             # corregge comandi sbagliati
 setopt hist_ignore_dups    # ignora duplicati in cronologia
 setopt share_history       # condivide cronologia tra terminali
@@ -75,4 +75,5 @@ setopt share_history       # condivide cronologia tra terminali
 # -------------------------------
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# ctrl + space to accept
 bindkey '^ ' autosuggest-accept
