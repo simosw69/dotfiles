@@ -3,9 +3,9 @@
 # Cartella con gli sfondi
 WALLPAPER_DIR="$HOME/Pictures/wallpapers"
 
-# Controlla se swww è attivo
-if ! pgrep -x "swww-daemon" > /dev/null; then
-    swww init
+# Controlla se awww è attivo
+if ! pgrep -x "awww-daemon" > /dev/null; then
+    awww-daemon &
     sleep 0.5
 fi
 
@@ -13,7 +13,6 @@ fi
 RANDOM_WALL=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) | shuf -n 1)
 
 # Imposta lo sfondo con un bel effetto
-
-swww img "$RANDOM_WALL" --transition-type grow --transition-duration 2 --transition-fps 60
+awww img "$RANDOM_WALL" --transition-type grow --transition-duration 2 --transition-fps 60
 
 ~/.config/hypr/scripts/current-wp.sh

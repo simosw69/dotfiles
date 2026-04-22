@@ -7,5 +7,4 @@ My personal dotfiles for Arch Linux.
 ```bash
 git clone https://github.com/simosw69/dotfiles
 cd dotfiles
-stow *
-```bash
+stow dotfiles

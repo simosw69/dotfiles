@@ -19,6 +19,10 @@
         "format": "{icon}",
         "icon-size": 20,
         "format-icons": {
+            "1": "",
+            "2": "󰖟",
+            "3": "",
+            "10": ""
 	      },
         "persistent-workspaces": {
             "*": 0

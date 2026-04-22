@@ -3,12 +3,12 @@
 # === CONFIG ===
 CONF_FILE="$HOME/.config/hypr/hyprlock.conf"
 
-# === PRENDI L'ULTIMO WALLPAPER DA SWWW ===
-# 'swww query' mostra una riga con il path come ultima parola
-current_wp=$(swww query | awk 'NR==1 {print $NF}' | tr -d '\n')
+# === PRENDI L'ULTIMO WALLPAPER DA AWWW ===
+# 'awww query' mostra una riga con il path come ultima parola
+current_wp=$(awww query | awk 'NR==1 {print $NF}' | tr -d '\n')
 
 # Se non trova nulla, esce
-[ -z "$current_wp" ] && echo "❌ Nessun wallpaper trovato da swww" && exit 1
+[ -z "$current_wp" ] && echo "❌ Nessun wallpaper trovato da awww" && exit 1
 
 # === AGGIORNA IL FILE DI CONFIG ===
 # Sostituisce solo la PRIMA riga che contiene 'path ='
